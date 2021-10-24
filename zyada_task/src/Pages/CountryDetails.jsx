@@ -1,7 +1,7 @@
-import { useHistory,useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Button from '@mui/material/Button';
 import ArrowBack from '@mui/icons-material/ArrowBack';
-import { TextField, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 
 import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles({
@@ -74,6 +74,7 @@ const CountryDetails=()=>{
                     <img
                     src={country.flags.png}
                     style={{height:'100%',width:'100%'}}
+                    alt="flag"
                 />
                 </div>
                 <div >

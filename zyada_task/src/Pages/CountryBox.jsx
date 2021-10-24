@@ -1,12 +1,8 @@
 
 import React from 'react'
-import SearchIcon from '@mui/icons-material/Search';
-import { TextField, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 
 import { makeStyles } from '@mui/styles';
-import MenuItem from '@mui/material/MenuItem';
-import { useEffect } from 'react';
-import { useState } from 'react';
 import { useHistory } from 'react-router';
 
 const useStyles = makeStyles({
@@ -39,6 +35,7 @@ const  CountryBox=(props)=>{
         <img
          src={props.country.flags.png}
             className={classes.flag}
+            alt="flag"
         ></img>
         <Typography fontWeight={'600'} fontSize={16} style={{marginBottom:10}} > {props.country.name.official}</Typography>
 
